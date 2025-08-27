@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow: hidden;
+  font-family: Noto Sans JP;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #171717;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  max-width: 1024px;
+  height: 60px;
+  padding: 0 0.8em;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.logo {
+  width: 150px;
+  content: url("image/koganpa.png");
+}
+
+.header-nav-list {
+  display: inline-block;
+}
+
+.header-nav-item {
+  float: left;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  list-style: none;
+}
+
+.header-nav-item:hover {
+  color: #444444;
+}
+
+.header-nav-item a {
+  text-decoration: none;
+}
+
+.header-ham {
+  display: none;
+}
+
+.menu2 {
+  width: 20px;
+  height: 3px;
+  margin: 4px 0;
+  margin-right: 0;
+  background-color: #333;
+}
+
+.logo img {
+  width: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .header-nav-list {
+    display: none;
+  }
+
+  .header-nav {
+    margin: 0 0 0 auto;
+  }
+
+  .header-ham {
+    display: block;
+  }
+}

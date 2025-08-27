@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow: hidden;
+  font-family: Noto Sans JP;
+  animation: fadeIn 2.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  background-color: #212121;
+}
+
+p, h1 {
+  color: #FFFFFF;
+}
+
+.header-iframe {
+  width: 100%;
+  height: 100px;
+  border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.welcome {
+  font-weight: normal;
+  text-align: center;
+  margin-top: 125px;
+}
+
+.explanation {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.windowsbox, .applebox, .googlebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  font-weight: bold;
+  background: #EEEEEE;
+  border-radius: 10px;
+  max-width: 375px;
+  width: 80%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background-color: #808080;
+}
+
+.windowsbox {
+  color: #0078D7;
+  border: solid 3px #0078D7;
+}
+
+.applebox {
+  color: #696969;
+  border: solid 3px #696969;
+}
+
+.googlebox {
+  color: #3DDC84;
+  border: solid 3px #3DDC84;
+}
+
+/* aタグをflex中央揃え＆範囲限定 */
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.windows-logo,
+.google-logo {
+  width: 37.5px;
+  height: 37.5px;
+}
+
+.apple-logo {
+  margin-left: 3.51px;
+  margin-right: 3.51px;
+  height: 37.5px;
+}
+
+.ostext {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+.windows-logo, .google-logo {
+  width: 37.5px;
+  height: 37.5px;
+  float: left;
+}
+
+.apple-logo {
+  margin-left: 3.51px;
+  margin-right: 3.51px;
+  height: 37.5px;
+  float: left;
+}
+
+.ostext {
+  margin: auto;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.sorry {
+  text-align: center;
+}
+
+.copyright, .form {
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #171717;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

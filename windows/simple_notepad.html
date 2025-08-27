@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>koganpa.com</title>
+    <link rel="stylesheet" href="simple_notepad.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <script src="simple_notepad.js"></script>
+  </head>
+  <body>
+    <header>
+    <iframe src="../header.html" class="header-iframe" style="height: 100px;"></iframe>
+    </header>
+    <main>
+      <img src="../image/notepad_icon.ico" class="simple_notepad_icon">
+      <p class="windows">Windows 8 / 8.1 / 10 / 11 対応</p>
+      <h1 class="japanese_title">シンプルなメモ帳</h1>
+      <p class="catchcopy">無駄を削ぎ落したシンプルなメモ帳です。</p>
+      <div class="download-div">
+        <a href="../download_file/exe/simple_notepad.exe" class="download">(.exe)ダウンロード</a>
+        <br>
+        <a href="../download_file/zip/simple_notepad.zip" class="download">(.zip)ダウンロード</a>
+        <p>Ver 1.0.0</p>
+          <button id="popupButton">どちらをダウンロードすればいいかわからない方へ</button>
+      </div>
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span id="closePopup" class="close">&times;</span>
+          <h2>.exe版と.zip版の違い</h2>
+          <p>.exe版は1ファイルのみで完結しますが、<b>起動に若干の遅延</b>があります。</p>
+          <p>.zip版は.exe版に比べて<b>容量が大きい</b>ですが、起動が速いです。</p>
+          <p>なお、どちらも<b>機能は変わりません</b>のでご安心ください。</p>
+        </div>
+      </div>
+      <div class="explanation">
+        <h2>最低限の必要な機能のみ</h2>
+        <p>
+          無駄な機能は全てそぎ落としました。
+          <br>ボタンは「新規作成・開く・保存・名前を付けて保存」、</br>
+          ショートカットキーは「元に戻す(Ctrl+Z)・やり直し(Ctrl+Y)」のみです。
+        </p>
+        <img src="../image/simple_notepad_screenshot1.png" class="simple_notepad_screenshot">
+      </div>
+      <div class="explanation">
+        <h4>Windowsメモ帳との互換性</h4>
+        <p>
+          Windowsメモ帳で作成したファイル(.txt)との互換性があります。
+          <br>操作感も変わらないので、安心して使用できます。</br>
+          さらに、UIにも互換性があるので、違和感なく使用できます。
+        </p>
+        <img src="../image/simple_notepad_screenshot2.png" class="simple_notepad_screenshot">
+      </div>
+      <div class="explanation">
+        <h4>圧倒的な軽さ</h4>
+        <p>
+          大部分のパソコンでも動作するように、他のメモ帳よりも非常に軽いソフトになっています。
+          <br>また、Windows環境であればUSBメモリに入れて持ち運びも可能です。</br>
+          インターネットも必要ないので、オフラインでもお手軽に使えます。
+        </p>
+        <img src="../image/simple_notepad_screenshot3.png" class="simple_notepad_screenshot">
+      </div>
+      <table>
+        <tr>
+          <th colspan="2">開発者用詳細</th>
+        </tr>
+        <tr>
+          <td>使用言語</td>
+          <td>Python 3.10</td>
+        </tr>
+        <tr>
+          <td>使用ライブラリ</td>
+          <td>Tkinter 8.6</td>
+        </tr>
+        <tr>
+          <td>開発環境</td>
+          <td>Windows11 Home 64bit</td>
+        </tr>
+      </table>
+      <p class="download-p">下のボタンから今すぐダウンロード</p>
+      <div class="download-div">
+        <a href="../download_file/exe/simple_notepad.exe" class="download">(.exe)ダウンロード</a>
+        <br>
+        <a href="../download_file/zip/simple_notepad.zip" class="download2">(.zip)ダウンロード</a>
+      </div>
+      <footer>
+        <p class="copyright">© 2024-2025 koganpa</p>
+        <a href="https://forms.gle/qWXer7z1mK5jvevK9"><p class="form">お問い合わせフォーム</p></a>
+      </footer>
+    </main>
+  </body>
+</html>
